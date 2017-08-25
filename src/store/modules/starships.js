@@ -36,8 +36,6 @@ const mutations = {
   }
 }
 
-console.log(mutations)
-
 export default {
   state,
   getters,

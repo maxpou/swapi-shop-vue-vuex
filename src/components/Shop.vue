@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Shop</h2>
-    <div class="ui container">
+    <div class="ui container shop">
       <div class="ui cards three column">
         <div class="card" v-for="starship in starships">
           <div class="content">
@@ -11,8 +11,9 @@
               <i class="bitcoin icon"></i> {{ starship.cost_in_credits }}
             </div>
           </div>
-          <div v-if="starship.cost_in_credits !== 'unknown'" class="ui bottom orange attached button">
-            <i class="plus icon"></i> add to basket
+          <div v-if="starship.cost_in_credits !== 'unknown'" @click="addToSelection(starship)"
+            class="ui bottom orange attached button">
+            <i class="plus icon"></i> add to selection
           </div>
           <div v-else class="ui disabled button">Sold out</div>
         </div>
@@ -36,7 +37,8 @@ export default {
     isFullyloaded: 'isFullyloaded'
   }),
   methods: mapActions([
-    'loadStarships'
+    'loadStarships',
+    'addToSelection'
   ]),
   created () {
     this.$store.dispatch('loadStarships', this.currentPage)
@@ -45,6 +47,9 @@ export default {
 </script>
 
 <style scoped>
+div.shop {
+  text-align: center;
+}
 div.load {
   margin: 1em;
 }
