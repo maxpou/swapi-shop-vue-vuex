@@ -1,0 +1,2 @@
+export const RECEIVE_STARSHIPS = 'RECEIVE_STARSHIPS'
+export const CHANGE_PAGE = 'CHANGE_PAGE'
