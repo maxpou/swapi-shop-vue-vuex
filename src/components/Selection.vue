@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>My selection</h2>
+    <h2 class="sectionTitle">My selection</h2>
 
     <div class="ui container">
       <div class="ui relaxed divided list">
