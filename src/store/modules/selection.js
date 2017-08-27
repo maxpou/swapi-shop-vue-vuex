@@ -18,6 +18,9 @@ const actions = {
 const mutations = {
   [types.ADD_TO_SELECTION] (state, { starship }) {
     state.all.push(starship)
+  },
+  [types.REMOVE_FROM_SELECTION] (state, { starship }) {
+    state.all.splice(state.all.indexOf(starship), 1)
   }
 }
 

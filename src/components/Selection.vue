@@ -6,7 +6,7 @@
       <div class="ui relaxed divided list">
         <div class="item" v-for="item in mySelection">
           <div class="right floated content">
-            <div class="ui button">-</div>
+            <div class="ui button" @click="removeFromSelection(item)">-</div>
           </div>
           <i class="large rocket middle aligned icon"></i>
           <div class="content">
@@ -22,11 +22,14 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   computed: mapGetters({
     mySelection: 'mySelection'
+  }),
+  methods: mapActions({
+    removeFromSelection: 'removeFromSelection'
   })
 }
 </script>
