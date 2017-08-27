@@ -1,5 +1,7 @@
 # sw-shop
 
+[![Build Status](https://travis-ci.org/maxpou/sw-shop-vuejs.svg?branch=master)](https://travis-ci.org/maxpou/sw-shop-vuejs) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 > A Vue.js project
 
 ## Build Setup
