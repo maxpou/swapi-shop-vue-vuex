@@ -3,16 +3,16 @@ import * as types from '../mutation-types'
 
 // initial state
 const state = {
-  spaceships: [],
+  starships: [],
   currentPage: 1,
   itemCount: 0
 }
 
 // getters
 const getters = {
-  allStarships: state => state.spaceships,
+  allStarships: state => state.starships,
   currentPage: state => state.currentPage,
-  isFullyloaded: () => state.itemCount === state.spaceships.length
+  isFullyloaded: state => state.itemCount === state.starships.length
 }
 
 // actions
@@ -28,7 +28,7 @@ const actions = {
 // mutations
 const mutations = {
   [types.RECEIVE_STARSHIPS] (state, { data }) {
-    state.spaceships = state.spaceships.concat(data.results)
+    state.starships = state.starships.concat(data.results)
     state.itemCount = data.count
   },
   [types.CHANGE_PAGE] (state, { page }) {

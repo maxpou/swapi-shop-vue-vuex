@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Selection from '@/components/Selection'
-import store from '../../../src/store'
+import store from '../../../../src/store'
 
 describe('Selection.vue', () => {
   it('test initial rendering', (done) => {
