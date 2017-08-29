@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Selection from '@/components/Shop'
-import store from '../../../src/store'
+import store from '../../../../src/store'
 
-describe('Selection.vue', () => {
+describe('Shop.vue', () => {
   it('test initial rendering', (done) => {
     const vm = new Vue({
       template: '<div><test></test></div>',
