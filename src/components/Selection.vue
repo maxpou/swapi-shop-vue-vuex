@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2 class="sectionTitle">My selection</h2>
 
-    <div class="ui container">
+    <div class="ui container" v-if="mySelection.length > 0">
+      <h2 class="sectionTitle">My selection</h2>
       <div class="ui relaxed divided list">
         <div class="item" v-for="item in mySelection">
           <div class="right floated content">
