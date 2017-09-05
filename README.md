@@ -1,20 +1,20 @@
 # swapi-shop-vue-vuex
 
-[![Build Status](https://travis-ci.org/maxpou/sw-shop-vuejs.svg?branch=master)](https://travis-ci.org/maxpou/sw-shop-vuejs) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.org/maxpou/swapi-shop-vue-vuex.svg?branch=master)](https://travis-ci.org/maxpou/swapi-shop-vue-vuex) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ![](./sw-shop.png)
 
 > A Vue.js + Vuex project using the [Star Wars API](https://swapi.co/).
 
-[A demo is available HERE](http://www.maxpou.fr/sw-shop-vuejs/)
+[A demo is available HERE](http://www.maxpou.fr/swapi-shop-vue-vuex/)
 
 ## What's inside
 
 * [VueJs 2](https://vuejs.org/): an awesome JS Framework ❤️
-  * [vuex](https://vuex.vuejs.org/en/): A state management library for VueJs
-  * [Axios](https://github.com/mzabriskie/axios): a well known library for XMLHttpRequests
-  * Unit Tests (run in PhantomJS with Karma + Mocha + karma-webpack)
-  * End-to-end tests (with Nightwatch)
+* [vuex](https://vuex.vuejs.org/en/): A state management library for VueJs
+* [Axios](https://github.com/mzabriskie/axios): a well known library for XMLHttpRequests
+* Unit Tests (run in PhantomJS with Karma + Mocha + karma-webpack)
+* End-to-end tests (with Nightwatch)
 * [SemanticUI](http://semantic-ui.com/): CSS Framework.
 
 
