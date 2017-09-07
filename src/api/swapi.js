@@ -1,7 +1,5 @@
-import http from 'axios'
+import axios from 'axios'
 
 export function getStarships (page = 1) {
-  return http.get(process.env.SWAPI_URL + 'starships/?page=' + page).then(response => {
-    return response.data
-  })
+  return axios.get(process.env.SWAPI_URL + 'starships/?page=' + page).then(response => response.data)
 }
