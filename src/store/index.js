@@ -17,6 +17,7 @@ const store = new Vuex.Store({
   strict: debug
 })
 
+/* istanbul ignore if */
 if (module.hot) {
   module.hot.accept([
     './modules/starships'
