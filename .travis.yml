@@ -4,7 +4,7 @@ dist: trusty
 
 env:
   - TEST_SUITE=lint
-  - TEST_SUITE=unit
+  - TEST_SUITE=test
 
 language: node_js
 
